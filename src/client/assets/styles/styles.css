@@ -1,0 +1,31 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100%;
+}
+
+body {
+  background-color: rgb(142, 165, 241);
+}
+
+* {
+  outline: solid 1px red;
+}
+
+.personalForm {
+  background-color: blueviolet;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  gap: 10px;
+  padding: 10px;
+}
