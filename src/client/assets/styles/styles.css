@@ -21,11 +21,73 @@ body {
   outline: solid 1px red;
 }
 
-.personalForm {
-  background-color: blueviolet;
+.App {
   display: flex;
   flex-direction: column;
-  max-width: 300px;
+}
+
+.main {
+  flex: 1;
+}
+
+.header {
+  display: flex;
   gap: 10px;
+}
+
+/* categories */
+
+.categories {
+  display: flex;
+  gap: 10px;
+}
+
+.header,
+.footer {
+  background-color: blueviolet;
+}
+
+/* DisplayItems styling */
+
+.itemCont {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.dataItem {
+  border: 1px solid #ccc;
   padding: 10px;
+  margin: 10px;
+  text-align: center;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.price {
+  color: #009688; /* or any color you prefer */
+  font-size: 16px;
+  margin-bottom: 5px;
+  white-space: nowrap;
+}
+
+.description {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+img {
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.underPhoto {
+  display: flex;
+  justify-content: space-between;
 }

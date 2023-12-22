@@ -1,24 +1,24 @@
-import React from 'react';
-import { createRoot } from 'react-dom/client';
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import App from './App';
-import './assets/styles/styles.css';
+import React from "react";
+import { createRoot } from "react-dom/client";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import App from "./App";
+import "./assets/styles/styles.css";
 
-const rootEl = document.querySelector('#root');
-if (rootEl === null) throw new Error('Can not find root element');
+const rootEl = document.querySelector("#root");
+if (rootEl === null) throw new Error("Can not find root element");
 const root = createRoot(rootEl);
 
 const router = createBrowserRouter([
-	{
-		path: '/',
-		element: <App />,
-	},
+  {
+    path: "/",
+    element: <App />,
+  },
 ]);
 
 root.render(
-	<React.StrictMode>
-		<RouterProvider router={router}></RouterProvider>
-	</React.StrictMode>
+  <React.StrictMode>
+    <RouterProvider router={router}></RouterProvider>
+  </React.StrictMode>
 );
 
 // npm install --save-dev jest @types/jest ts-jest @testing-library/react @testing-library/jest-dom
