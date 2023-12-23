@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import type { Item, StartPage } from "../interfaces";
+import type { Item, StartPage } from "../components/interfaces";
 
 type UseFetchProps = (url: string) => { data: Item[]; pageState: string };
 
