@@ -8,9 +8,14 @@ html {
   min-height: 100%;
 }
 
+#root {
+  flex: 1;
+}
+
 body {
   min-height: 100vh;
   min-width: 100%;
+  display: flex;
 }
 
 body {
@@ -24,10 +29,11 @@ body {
 .App {
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .main {
-  flex: 1;
+  flex: 2;
 }
 
 .header {

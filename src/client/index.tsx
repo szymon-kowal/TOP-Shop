@@ -1,6 +1,5 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import App from "./App";
 import "./assets/styles/styles.css";
 
@@ -8,20 +7,11 @@ const rootEl = document.querySelector("#root");
 if (rootEl === null) throw new Error("Can not find root element");
 const root = createRoot(rootEl);
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-  },
-]);
-
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router}></RouterProvider>
+    <App />
   </React.StrictMode>
 );
-
-// npm install --save-dev jest @types/jest ts-jest @testing-library/react @testing-library/jest-dom
 
 /*
 I need to have main page

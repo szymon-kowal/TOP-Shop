@@ -1,17 +1,15 @@
 import React from "react";
-import type { Item } from "./interfaces";
+import { useParams } from "react-router-dom";
+import { useData } from "./Root";
 
-interface DisplayProps {
-  data: Item[];
-  filter: string;
-}
-
-const DisplayItems: React.FC<DisplayProps> = ({ data, filter }) => {
+const DisplayItems: React.FC = () => {
+  const { category } = useParams();
+  const { data } = useData();
   return (
     <div className="itemCont">
       {data.map((item) => {
-        if (filter !== "null") {
-          if (item.category !== filter) {
+        if (category !== undefined) {
+          if (item.category !== category) {
             return null;
           }
         }
